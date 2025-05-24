@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+
+   <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ </head>
+<body>
+  <header>
+    <div class="logo">POOJA BAI K</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle" id="darkToggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-content" role="region" aria-label="Introduction">
+      <h1>Hello, I'm <span id="typed-text" aria-live="polite"></span></h1>
+      <h2>Frontend Developer | Full Stack Developer</h2>
+      <a href="images/Poojaresume.pdf"class="btn" download>Download Resume</a>
+    </div>
+    <!-- Hero Image Section (REPLACE THIS) -->
+<div class="hero-image" aria-label="Animated pastel girl">
+    <img src="images/animateport1.jpg" alt="Animated Girl" style="width: 280px; animation: float 4s ease-in-out infinite;" />
+  </div>
+  
+    <div class="particles" aria-hidden="true"></div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="intro">
+      Hi! I'm <strong>Pooja Bai K</strong>, a passionate and curious <strong>Frontend & Full Stack Developer</strong>.  
+      I’m a <strong>fresh graduate</strong> with a BCA degree and a big dream to work on real-world tech with amazing teams like yours.  
+      I love building smooth, beautiful websites using <strong>HTML, CSS, JavaScript, and React</strong>.  
+      I’ve also explored backend with <strong>Node.js, MySQL, Python(Flask)</strong>.  
+        
+      I'm excited to grow and build something awesome with you! 
+    </p>
+  
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>💻 Skills</h3>
+          <p>HTML, CSS, JavaScript, React.js, Node.js, MySQL, Python(Flask)</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>🎓 Fresh Graduate - BCA</h3>
+          <p>Completed Bachelor of Computer Applications as a fresh graduate, eager to build my career in tech.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>🚀 Internship @ 8Queens</h3>
+          <p>Offline internship where I worked on frontend projects with a real team.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>🌐 Internship @ codtech it solution</h3>
+          <p>Online internship with hands-on practice in full stack development.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <h3>📜 Certified Learner</h3>
+    <p>
+      Successfully completed courses from <strong>Oracle, CognoRise, Infosys Springboard, Udemy, Coursera, Simplilearn</strong> & more.
+    </p>
+    <button class="view-cert-btn" onclick="openCertModal()">View Certificates</button>
+  </div>
+</div>
+
+<!-- 🔮 Modal Popup -->
+<div id="certModal" class="cert-modal">
+  <div class="cert-modal-content">
+    <span class="close-btn" onclick="closeCertModal()">&times;</span>
+    <h3>📜 My Certificates</h3>
+    <div class="cert-gallery">
+      <img src="certificates/cogno.jpg" alt="cognorise Certificate" />
+      <img src="certificates/mon1.jpg" alt="mongodb Certificate" />
+      <img src="certificates/mon4.jpg" alt="Mongodb Certificate" />
+      <img src="certificates/mon3.jpg" alt="mongodb Certificate" />
+      <img src="certificates/simpli1.jpg" alt="mongodb Certificate" />
+      <img src="certificates/simpli2.jpg" alt="mongodb Certificate" />
+      <img src="certificates/simpli3.jpg" alt="mongodb Certificate" />
+      <img src="certificates/ude1.jpg" alt="udemy Certificate" />
+      <img src="certificates/ude2.jpg" alt="udemy Certificate" />
+      <img src="certificates/ude3.jpg" alt="udemy Certificate" />
+      <img src="certificates/ora1.jpg" alt="oracle Certificate" />
+      <img src="certificates/ora1.jpg" alt="oracle Certificate" />
+      <img src="certificates/info1.jpg" alt="infosys Certificate" />
+      <img src="certificates/info2.jpg" alt="infosys Certificate" />
+      <img src="certificates/info3.jpg" alt="infosys Certificate" />
+    </div>
+  </div>
+</div>
+<script>
+  function openCertModal() {
+    document.getElementById('certModal').style.display = 'block';
+  }
+
+  function closeCertModal() {
+    document.getElementById('certModal').style.display = 'none';
+  }
+
+  window.onclick = function (event) {
+    const modal = document.getElementById('certModal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+  
+      <div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <h3>🌟 Ready to Collaborate</h3>
+    <ul>
+      <li>👩‍💻 Open to internships and freelance frontend/full stack projects.</li>
+      <li>🤝 Passionate about teamwork and learning from real-world challenges.</li>
+      <li>🚀 Eager to contribute to dynamic tech startups and creative teams.</li>
+      <li>📩 Let’s build something amazing together – I’m just one message away!</li>
+    </ul>
+  </div>
+</div>
+
+
+    
+
+  </section>
+  
+  
+  
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill">
+      <label>HTML</label>
+      <div class="progress-bar">
+        <div class="progress html" data-width="95%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>CSS</label>
+      <div class="progress-bar">
+        <div class="progress css" data-width="85%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>JavaScript</label>
+      <div class="progress-bar">
+        <div class="progress js" data-width="80%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>React</label>
+      <div class="progress-bar">
+        <div class="progress react" data-width="80%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>Node.js</label>
+      <div class="progress-bar">
+        <div class="progress node" data-width="70%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>MySQL</label>
+      <div class="progress-bar">
+        <div class="progress mysql" data-width="70%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>Python</label>
+      <div class="progress-bar">
+        <div class="progress python" data-width="70%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>Flask</label>
+      <div class="progress-bar">
+        <div class="progress flask" data-width="60%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <label>Github</label>
+      <div class="progress-bar">
+        <div class="progress github" data-width="70%"></div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="projects" id="projects">
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="project-carousel">
+    
+    <div class="project-card">
+      <img src="images/screen3.png" alt="JS Animation Site" />
+      <h3>Cafe Website</h3>
+      <a href="https://github.com/PK5674/cafe-website" target="_blank" class="view-code-btn">View Code</a>
+    </div>
+    <div class="project-card">
+      <img src="images/screen1.png" alt="UI Kit Showcase" />
+      <h3>Face Recognition with Gender Prediction</h3>
+      <a href="https://github.com/PK5674/face-recognition-with-gender" target="_blank" class="view-code-btn">View Code</a>
+    </div>
+    <div class="project-card">
+      <img src="images/screen2.png" alt="E-commerce Frontend" />
+      <h3>News Website</h3>
+      <a href="https://github.com/PK5674/InsightStream-Navigate-the-News-Landscape"
+
+ target="_blank" class="view-code-btn">View Code</a>
+    </div>
+    <div class="project-card">
+      <img src="images/screen4.png" alt="Landing Page UI" />
+      <h3>Beauty Bazzar</h3>
+      <a href="https://github.com/PK5674/Beauty-Bazzar" target="_blank" class="view-code-btn">View Code</a>
+    </div>
+</section>
+
+  
+  
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-container">
+   <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="c08dd253-c8de-4a63-bcb1-e098db7745e9">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+  </div>
+
+  <!-- Success Popup -->
+  <div id="successPopup" class="popup" style="display:none;">
+  <div class="popup-content">
+    <p>🎉 Thank you! Your message has been sent.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+
+
+
+
+ <footer>
+  <div class="socials">
+    <a href="https://github.com/PK5674" target="_blank" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/poojabai04" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    
+    <a href="https://wa.me/8667458118" target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+  <p>© 2025 Pooja. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
+
